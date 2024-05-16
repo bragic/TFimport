@@ -3,7 +3,7 @@
 ##################################################################################
 
 provider "aws" {
-  region                   = "us-east-1"
+  region                   = var.aws_region
   shared_credentials_files = ["C:\\Users\\bgrav\\.aws\\credentials"]
   profile                  = "default"
 
