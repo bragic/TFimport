@@ -82,5 +82,6 @@ Key points
 *.pem
 *.key
 *.pub
+*.hcl
 >>>>>>> d8a28d4b3aba01706e1379b49698fd7878578f36
 *.exe
