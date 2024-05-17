@@ -18,3 +18,16 @@ resource "aws_instance" "LinuxServer01" {
   #     "sg-05d65d831fd2b865a",
   #   ]
 }
+
+terraform {
+  backend "s3" {
+    # Replace this with your bucket name!
+    bucket         = "terraform-state-bg"
+    key            = "global/s3/terraform.tfstate"
+    region         = "us-east-1"
+
+    # Replace this with your DynamoDB table name!
+    dynamodb_table = "terraform-up-and-running-locks"
+    encrypt        = true
+  }
+}
