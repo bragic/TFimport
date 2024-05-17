@@ -5,7 +5,7 @@ resource "aws_instance" "LinuxServer01" {
   key_name                   = null
   placement_partition_number = 0
   security_groups = [
-    "sg-05d65d831fd2b865a",
+    "default",
   ]
   subnet_id = "subnet-09ac8f251dbe33c6f"
   tags = {
@@ -14,9 +14,9 @@ resource "aws_instance" "LinuxServer01" {
   tags_all = {
     "Name" = "LinuxServer01"
   }
-  #   vpc_security_group_ids = [
-  #     "sg-05d65d831fd2b865a",
-  #   ]
+    # vpc_security_group_ids = [
+    #   "default",
+    # ]
 }
 
 terraform {
