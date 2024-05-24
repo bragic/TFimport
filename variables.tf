@@ -4,14 +4,14 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "name" { 
-    default = "dynamic-aws-creds-operator" 
-    }
+variable "name" {
+  default = "dynamic-aws-creds-operator"
+}
 
-variable "path" { 
-    default = "../vault-admin-workspace/terraform.tfstate" 
-    }
+variable "path" {
+  default = "../vault-admin-workspace/terraform.tfstate"
+}
 
-variable "ttl" { 
-    default = "1" 
-    }
+variable "ttl" {
+  default = "1"
+}
